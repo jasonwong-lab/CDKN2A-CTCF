@@ -1,0 +1,8 @@
+assay	sample	read1	read2
+# Replace the example paths below with the actual downloaded filenames.
+#CTCF_ChIP	CTCF_Input	input_R1.fastq.gz	input_R2.fastq.gz
+#CTCF_ChIP	CTCF_ChIP_2690	2690_lane1.fastq.gz,2690_lane2.fastq.gz	-
+#CTCF_ChIP	CTCF_ChIP_2691	2691.fastq.gz	-
+#CTCF_ChIP	CTCF_ChIP_2696	2696_lane1.fastq.gz,2696_lane2.fastq.gz	-
+#CTCF_ChIP	IgG	igg.fastq.gz	-
+#RNA_seq	RNA_sample	rna_R1.fastq.gz	rna_R2.fastq.gz

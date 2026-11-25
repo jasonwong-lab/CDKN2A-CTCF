@@ -1,0 +1,4 @@
+sample	experiment	treatment
+# Add one row per RNA_seq sample in data_processing_code/samples.tsv.
+#RNA_sample	August_2020	TGF
+#RNA_control	August_2020	vehicle
