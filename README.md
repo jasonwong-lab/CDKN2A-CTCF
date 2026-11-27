@@ -8,8 +8,7 @@ necessary access and download:
 - CTCF ChIP-seq, IgG control (if available), and input FASTQs to `./data/CTCF_ChIP/`.
 - RNA-seq FASTQs to `./data/RNA_seq/`.
 
-The processing scripts expect gzip-compressed FASTQs. Keep controlled-access
-data out of any public repository.
+The processing scripts expect gzip-compressed FASTQs. 
 
 The hg38 reference files and indexes are not included. Before processing,
 download an hg38 genome FASTA and build the indexes below (or obtain compatible
@@ -41,13 +40,9 @@ conda run --no-capture-output -n STAR_env STAR --runMode genomeGenerate \
   --sjdbGTFfile reference/hg38.ensGene.gtf --sjdbOverhang 100
 ```
 
-These are example sources: their exact FASTA and GTF versions have not been
-verified against the original analysis. For reproducibility, obtain and use
-the original reference and annotation versions if available. Ensure FASTA,
-GTF, and BED chromosome names match (including `chr9`). The supplied
+Ensure FASTA, GTF, and BED chromosome names match (including `chr9`). The supplied
 `annotations/MANE_hg38.gtf` is not a substitute for ensGene without evaluating
-the effect on the analysis. Index generation requires substantial disk space
-and memory; do not add these large generated files to a public repository.
+the effect on the analysis. 
 
 ## Sample manifest
 
@@ -72,7 +67,7 @@ by commas, without spaces. Paired-end lane lists must have equal lengths and
 matching order. Paths may contain subdirectories, letters, digits, `_`, `-`,
 `.` and `/`, but not spaces or commas in individual filenames. Use a checkout
 path without spaces for STAR. The scripts validate the manifest and input
-files before starting an assay.
+files before executing.
 
 ## Conda software
 
